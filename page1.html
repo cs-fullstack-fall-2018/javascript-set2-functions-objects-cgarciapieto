@@ -4,7 +4,23 @@
     <meta charset="UTF-8">
     <title>Page 1 HTML</title>
 </head>
+<script>
+    function openWin() {
+        window.open("page2.html");
+    }
+</script>
+
 <body>
+
+
+<form>
+    <input type="button" value="Open Window" onclick="openWin()">
+</form>
+
+<button onclick= "window.print()">print</button>
+
+
+
 <!--
     BOM Exercise:
     - Provide a button that when clicked will open up HTML file 2 using the 'window' object

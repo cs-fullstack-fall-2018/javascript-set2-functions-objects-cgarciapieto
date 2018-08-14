@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 2 HTML</title>
+
+    <script>
+        function printPage() {
+            window.print();
+        }
+    </script>
+
+
 </head>
 <body>
+
+<div>
+<h1 id="myHeader">This is the Head of the Page</h1>
+
+</div>
+
+
+
+
+
+
+<p id="demo"></p>
+
+<script>
+    document.getElementById("demo").innerHTML =
+        "Available screen height is " + screen.availHeight;
+</script>
+
+
+
+<p id="demo2"></p>
+
+<script>
+    document.getElementById("demo2").innerHTML =
+        "Screen width is " + screen.width;
+</script>
+<!--Click on print me please butomn to print the current page -->
+
+
+<input type="button" value="Print Me Please!" onclick="printPage()" />
+
+
+<button onclick="myFunction()">Date</button>
+
+<p id="date"></p>
+
+<script>
+    function myFunction() {
+        var d = new Date();
+        var n = d.getDate();
+        document.getElementById("date").innerHTML = n;
+    }
+</script>
+
+
+
 <!--
     DOM Exercise:
     - Modify the provided HTML starter file to add a DIV at the top of this page with an ID of 'header'

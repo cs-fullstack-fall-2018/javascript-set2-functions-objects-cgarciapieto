@@ -20,3 +20,8 @@ Write HTML pages and corresponding JavaScript to perform the following:
 
 See sample image to see expected output.
 
+/*
+
+	KEY: Good try overall, but on page 2 while I see ht/width, I do not see current URL or the additional information:
+		Page Title, Page Address, Last Modified
+*/

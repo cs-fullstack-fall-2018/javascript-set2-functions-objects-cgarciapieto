@@ -8,7 +8,15 @@
         function printPage() {
             window.print();
         }
+        // Key: Added
+        function pageinfo() {
+            document.write("<br/>");
+            document.write("Doc Title: "+document.title + "<br/>");
+            document.write("Doc Location: " + document.location + "<br/>");
+            document.write("Doc Last Modified: " + document.lastModified + "<br/>");
+        }
     </script>
+
 
 
 </head>
@@ -42,20 +50,14 @@
 <!--Click on print me please butomn to print the current page -->
 
 
-<input type="button" value="Print Me Please!" onclick="printPage()" />
+<!-- <input type="button" value="Print Me Please!" onclick="printPage()" />  Why printing from page 2? -->
 
 
-<button onclick="myFunction()">Date</button>
+<button onclick="pageinfo()">Other Info</button>
 
 <p id="date"></p>
 
-<script>
-    function myFunction() {
-        var d = new Date();
-        var n = d.getDate();
-        document.getElementById("date").innerHTML = n;
-    }
-</script>
+<!-- s -->
 
 
 
